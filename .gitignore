@@ -49,4 +49,4 @@ po/*~
 rsconnect/
 
 #Outputs from R markdown files
-.html
+*.html
