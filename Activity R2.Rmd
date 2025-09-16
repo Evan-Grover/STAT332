@@ -1,0 +1,39 @@
+---
+title: "Activity R2"
+output: html_document
+date: "2025-09-16"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Exploring Cars
+
+In this R markdown document I will **explore** the built in *dataset* mtcars.
+
+```{r mtcars}
+summary(mtcars)
+```
+
+## I can also make a table to compare different mtcars
+```{r echo = FALSE}
+library(knitr)
+kable(mtcars[10:15, ])
+```
+
+
+## Guess I could do a plot to...
+```{r echo=FALSE}
+plot(mtcars$mpg)
+```
+
+Here is a list
+```{r}
+my_list <- list("this", "list", "contains", 5, "things")
+for (item in my_list) {
+  print(item)
+}
+```
+and this is a crazy [link](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+![an image to tell you to click the link](click.png)
